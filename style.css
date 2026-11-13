@@ -1,0 +1,91 @@
+/* Configurações Gerais e Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --azul-principal: #0f2454;
+    --azul-escuro: #091636;
+    --laranja-destaque: #f97316;
+    --laranja-hover: #ea580c;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Utilitários de Cores Personalizadas */
+.bg-horizonte-azul {
+    background-color: var(--azul-principal);
+}
+
+.bg-horizonte-azul-escuro {
+    background-color: var(--azul-escuro);
+}
+
+.text-horizonte-azul {
+    color: var(--azul-principal);
+}
+
+.bg-horizonte-laranja {
+    background-color: var(--laranja-destaque);
+}
+
+.hover\:bg-horizonte-laranja-escuro:hover {
+    background-color: var(--laranja-hover);
+}
+
+.text-horizonte-laranja {
+    color: var(--laranja-destaque);
+}
+
+.border-horizonte-laranja {
+    border-color: var(--laranja-destaque);
+}
+
+/* Efeitos de Cards e Transições */
+.news-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(15, 36, 84, 0.15);
+}
+
+.news-card img {
+    transition: transform 0.4s ease;
+}
+
+.news-card:hover img {
+    transform: scale(1.04);
+}
+
+/* Estilo para link ativo no menu */
+.nav-link {
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.nav-link.active {
+    color: var(--laranja-destaque);
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--laranja-destaque);
+    border-radius: 2px;
+}

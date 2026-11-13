@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Horizonte | Informação com Credibilidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-horizonte-azul text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-horizonte-laranja rounded-lg flex items-center justify-center font-extrabold text-xl text-white shadow-md group-hover:scale-105 transition">
+                    PH
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight block leading-none">PORTAL <span class="text-horizonte-laranja">HORIZONTE</span></span>
+                    <span class="text-xs text-slate-300 tracking-widest uppercase">Jornalismo Independente</span>
+                </div>
+            </a>
+
+            <!-- Menu de Navegação -->
+            <nav class="flex flex-wrap justify-center gap-6 text-sm md:text-base font-medium">
+                <a href="index.html" class="nav-link active hover:text-orange-400">Início</a>
+                <a href="nossa-historia.html" class="nav-link hover:text-orange-400">Nossa História</a>
+                <a href="codigo-etica.html" class="nav-link hover:text-orange-400">Código de Ética</a>
+                <a href="contato.html" class="nav-link hover:text-orange-400">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- Seção Destaques -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="w-2 h-8 bg-horizonte-laranja rounded-full"></span>
+                <h2 class="text-2xl md:text-3xl font-bold text-horizonte-azul">Destaques do Dia</h2>
+            </div>
+
+            <!-- Banner Principal de Destaque -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 grid grid-cols-1 lg:grid-cols-12 news-card">
+                <div class="lg:col-span-7 overflow-hidden h-72 lg:h-96">
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80" alt="Redação de jornalismo" class="w-full h-full object-cover">
+                </div>
+                <div class="lg:col-span-5 p-6 md:p-8 flex flex-col justify-center">
+                    <span class="inline-block bg-orange-100 text-horizonte-laranja text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider w-fit mb-3">
+                        Economia & Inovação
+                    </span>
+                    <h1 class="text-2xl md:text-3xl font-extrabold text-horizonte-azul mb-4 leading-tight">
+                        Transição energética impulsiona novos investimentos em infraestrutura no Brasil
+                    </h1>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Relatório aponta crescimento de 28% nos aportes voltados para energia limpa e modernização logística neste semestre, gerando milhares de empregos qualificados.
+                    </p>
+                    <div class="flex items-center justify-between text-xs text-slate-400 border-t pt-4">
+                        <span>Por Redação Horizonte</span>
+                        <span>Há 2 horas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Últimas Notícias (5 Cards com Imagem) -->
+        <section>
+            <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center gap-3">
+                    <span class="w-2 h-8 bg-horizonte-laranja rounded-full"></span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-horizonte-azul">Últimas Notícias</h2>
+                </div>
+                <span class="text-sm font-semibold text-horizonte-laranja hidden sm:inline">Atualizado em tempo real</span>
+            </div>
+
+            <!-- Grid de 5 Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col news-card">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Tecnologia" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-horizonte-azul text-white text-xs font-semibold px-2.5 py-1 rounded">Tecnologia</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-horizonte-azul mb-2 hover:text-horizonte-laranja cursor-pointer transition">
+                                Inteligência Artificial na saúde reduz tempo de diagnósticos clínicos em 40%
+                            </h3>
+                            <p class="text-slate-600 text-sm line-clamp-3">
+                                Hospitais públicos e privados adotam sistemas preditivos para auxiliar médicos na detecção precoce de doenças complexas.
+                            </p>
+                        </div>
+                        <span class="text-xs text-slate-400 mt-4 pt-3 border-t block">Publicado hoje às 14:30</span>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col news-card">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80" alt="Mercado Financeiro" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-horizonte-laranja text-white text-xs font-semibold px-2.5 py-1 rounded">Mercados</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-horizonte-azul mb-2 hover:text-horizonte-laranja cursor-pointer transition">
+                                Exportações do agronegócio batem recorde histórico no acumulado do ano
+                            </h3>
+                            <p class="text-slate-600 text-sm line-clamp-3">
+                                Demanda asiática e europeia por grãos e proteínas impulsiona balança comercial e fortalece reservas internacionais.
+                            </p>
+                        </div>
+                        <span class="text-xs text-slate-400 mt-4 pt-3 border-t block">Publicado hoje às 13:15</span>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col news-card">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80" alt="Cidades" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-horizonte-azul text-white text-xs font-semibold px-2.5 py-1 rounded">Cidades</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-horizonte-azul mb-2 hover:text-horizonte-laranja cursor-pointer transition">
+                                Capitais ampliam corredores verdes e transporte público elétrico
+                            </h3>
+                            <p class="text-slate-600 text-sm line-clamp-3">
+                                Novos planos de mobilidade urbana priorizam redução de emissões e integração entre modais ferroviários e ônibus.
+                            </p>
+                        </div>
+                        <span class="text-xs text-slate-400 mt-4 pt-3 border-t block">Publicado hoje às 11:50</span>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col news-card">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Educação" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-horizonte-laranja text-white text-xs font-semibold px-2.5 py-1 rounded">Educação</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-horizonte-azul mb-2 hover:text-horizonte-laranja cursor-pointer transition">
+                                Universidades lançam programa de bolsas para pesquisa em biotecnologia
+                            </h3>
+                            <p class="text-slate-600 text-sm line-clamp-3">
+                                Iniciativa conta com parceria da iniciativa privada para financiar laboratórios e intercâmbio de estudantes.
+                            </p>
+                        </div>
+                        <span class="text-xs text-slate-400 mt-4 pt-3 border-t block">Publicado hoje às 10:20</span>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col news-card md:col-span-2 lg:col-span-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 h-full">
+                        <div class="h-48 sm:h-full overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Esportes" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-horizonte-azul text-white text-xs font-semibold px-2.5 py-1 rounded">Esportes</span>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-horizonte-azul mb-3 hover:text-horizonte-laranja cursor-pointer transition">
+                                    Preparação olímpica: atletas brasileiros batem marcas continentais em torneio preparatório
+                                </h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Delegação encerra etapa internacional com 14 medalhas e garante índices importantes nas provas de atletismo e natação antes da competição principal.
+                                </p>
+                            </div>
+                            <span class="text-xs text-slate-400 mt-4 pt-3 border-t block">Publicado hoje às 09:05</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Azul Escuro -->
+    <footer class="bg-horizonte-azul-escuro text-white mt-16 border-t-4 border-horizonte-laranja">
+        <div class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight">PORTAL <span class="text-horizonte-laranja">HORIZONTE</span></span>
+                    <p class="text-slate-400 text-sm mt-2">
+                        Compromisso diário com a verdade, apuração rigorosa e jornalismo independente.
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-2 text-sm text-slate-300 md:items-center">
+                    <a href="index.html" class="hover:text-horizonte-laranja transition">Início</a>
+                    <a href="nossa-historia.html" class="hover:text-horizonte-laranja transition">Nossa História</a>
+                    <a href="codigo-etica.html" class="hover:text-horizonte-laranja transition">Código de Ética</a>
+                    <a href="contato.html" class="hover:text-horizonte-laranja transition">Contato</a>
+                </div>
+                <div class="md:text-right text-sm text-slate-400">
+                    <p>&copy; 2026 Portal Horizonte Comunicação Ltda.</p>
+                    <p class="mt-1">Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

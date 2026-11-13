@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Portal Horizonte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-horizonte-azul text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-horizonte-laranja rounded-lg flex items-center justify-center font-extrabold text-xl text-white shadow-md group-hover:scale-105 transition">
+                    PH
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight block leading-none">PORTAL <span class="text-horizonte-laranja">HORIZONTE</span></span>
+                    <span class="text-xs text-slate-300 tracking-widest uppercase">Jornalismo Independente</span>
+                </div>
+            </a>
+
+            <nav class="flex flex-wrap justify-center gap-6 text-sm md:text-base font-medium">
+                <a href="index.html" class="nav-link hover:text-orange-400">Início</a>
+                <a href="nossa-historia.html" class="nav-link hover:text-orange-400">Nossa História</a>
+                <a href="codigo-etica.html" class="nav-link hover:text-orange-400">Código de Ética</a>
+                <a href="contato.html" class="nav-link active hover:text-orange-400">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-12">
+        
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-horizonte-laranja font-bold uppercase tracking-wider text-sm">Fale Conosco</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-horizonte-azul mt-2 mb-4">
+                    Entre em Contato com a Redação
+                </h1>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto">
+                    Envie sugestões de pauta, denúncias, dúvidas ou solicitações comerciais diretamente para nossa equipe.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Informações de Contato -->
+                <div class="lg:col-span-5 bg-horizonte-azul text-white rounded-2xl p-8 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-6 border-b border-slate-700 pb-4">Canais Diretos</h2>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <span class="text-horizonte-laranja text-xs font-bold uppercase tracking-wider block">Redação e Pautas</span>
+                                <p class="text-lg font-medium mt-1">redacao@portalhorizonte.com.br</p>
+                            </div>
+
+                            <div>
+                                <span class="text-horizonte-laranja text-xs font-bold uppercase tracking-wider block">Comercial e Anúncios</span>
+                                <p class="text-lg font-medium mt-1">comercial@portalhorizonte.com.br</p>
+                            </div>
+
+                            <div>
+                                <span class="text-horizonte-laranja text-xs font-bold uppercase tracking-wider block">Telefone / WhatsApp Plantão</span>
+                                <p class="text-lg font-medium mt-1">(11) 3456-7890</p>
+                            </div>
+
+                            <div>
+                                <span class="text-horizonte-laranja text-xs font-bold uppercase tracking-wider block">Endereço da Sede</span>
+                                <p class="text-slate-300 text-sm mt-1 leading-relaxed">
+                                    Av. Paulista, 1578 - 14º Andar<br>
+                                    Bela Vista, São Paulo - SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-400">
+                        Atendimento de segunda a sexta, das 08h às 20h. Plantão jornalístico 24 horas.
+                    </div>
+                </div>
+
+                <!-- Formulário Envie sua Mensagem -->
+                <div class="lg:col-span-7 bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+                    <h2 class="text-2xl font-bold text-horizonte-azul mb-6 flex items-center gap-3">
+                        <span class="w-2 h-7 bg-horizonte-laranja rounded-full"></span>
+                        Envie sua Mensagem
+                    </h2>
+
+                    <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! Nossa equipe responderá em breve.'); this.reset();" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="nome" class="block text-sm font-semibold text-slate-700 mb-1">Nome Completo</label>
+                                <input type="text" id="nome" required placeholder="Seu nome" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-horizonte-laranja focus:ring-2 focus:ring-orange-100 transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-slate-700 mb-1">E-mail</label>
+                                <input type="email" id="email" required placeholder="seu@email.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-horizonte-laranja focus:ring-2 focus:ring-orange-100 transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="assunto" class="block text-sm font-semibold text-slate-700 mb-1">Assunto</label>
+                            <select id="assunto" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-horizonte-laranja focus:ring-2 focus:ring-orange-100 transition bg-white">
+                                <option value="pauta">Sugestão de Pauta</option>
+                                <option value="errata">Solicitação de Correção / Errata</option>
+                                <option value="comercial">Anunciar no Portal</option>
+                                <option value="outros">Outros Assuntos</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensagem" class="block text-sm font-semibold text-slate-700 mb-1">Mensagem</label>
+                            <textarea id="mensagem" rows="5" required placeholder="Escreva sua mensagem detalhada aqui..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-horizonte-laranja focus:ring-2 focus:ring-orange-100 transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-horizonte-laranja hover:bg-horizonte-laranja-escuro text-white font-bold py-3.5 px-6 rounded-lg shadow-md transition duration-200 cursor-pointer">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé Azul Escuro -->
+    <footer class="bg-horizonte-azul-escuro text-white mt-16 border-t-4 border-horizonte-laranja">
+        <div class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight">PORTAL <span class="text-horizonte-laranja">HORIZONTE</span></span>
+                    <p class="text-slate-400 text-sm mt-2">
+                        Compromisso diário com a verdade, apuração rigorosa e jornalismo independente.
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-2 text-sm text-slate-300 md:items-center">
+                    <a href="index.html" class="hover:text-horizonte-laranja transition">Início</a>
+                    <a href="nossa-historia.html" class="hover:text-horizonte-laranja transition">Nossa História</a>
+                    <a href="codigo-etica.html" class="hover:text-horizonte-laranja transition">Código de Ética</a>
+                    <a href="contato.html" class="hover:text-horizonte-laranja transition">Contato</a>
+                </div>
+                <div class="md:text-right text-sm text-slate-400">
+                    <p>&copy; 2026 Portal Horizonte Comunicação Ltda.</p>
+                    <p class="mt-1">Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
